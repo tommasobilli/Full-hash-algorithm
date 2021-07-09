@@ -1,12 +1,12 @@
   
-module full_hash_des_top (
+module full_hash_aes_top (
    input             clk
   ,input             rst_n
   ,input             M_valid
   ,input      [63:0] C_in
   ,input       [7:0] M
   ,output reg        hash_ready
-  ,output reg [31:0] digest_out
+  ,output reg [63:0] digest_out
 );
 
   //digest init values
@@ -23,15 +23,15 @@ module full_hash_des_top (
   reg       [63:0] C;           // store input message length
   reg              state;       // determines if the circuit waits for a new message or a new byte of the current one
   reg  [7:0]       M_r;         // store message byte to process
-  wire [7:0] [3:0] H_main_w_o;  // feedback wires
+  wire [7:0] [7:0] H_main_w_o;  // feedback wires
   reg  [7:0] [7:0] H_main;      // contain hash chunks bits
-  reg       [31:0] digest;      // contain result of hashRound_final instance
+  reg       [63:0] digest;      // contain result of hashRound_final instance
   reg              M_valid_r;   // store M_valid to know if the mainHashIteration result on M_r has to be considered valid 
   
   //control signals
-  assign compute_state  = (counter > 64'd0) && (state == 1'b1);
+  assign compute_state  = (counter > 64'd0) && (state == 1'b1);      // there are still bytes to process
   assign init_state     = (state == 1'b0  ) && M_valid;
-  assign final_state    = (state == 1'b1  ) && (counter == 64'd0);
+  assign final_state    = (state == 1'b1  ) && (counter == 64'd0);   // no more bytes to process in the current message
   
   hash_main_iteration U0 (
      .M     (M_r)
