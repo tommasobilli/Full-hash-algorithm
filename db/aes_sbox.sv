@@ -1,4 +1,4 @@
-module des_sbox (
+module aes_sbox (
    input      [7:0] in
   ,output reg [7:0] out
 );
