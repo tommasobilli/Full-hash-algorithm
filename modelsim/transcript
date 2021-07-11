@@ -1135,3 +1135,81 @@ run -all
 quit -sim
 # End time: 12:14:39 on Jul 11,2021, Elapsed time: 0:00:30
 # Errors: 0, Warnings: 7
+# Compile of full_hash_aes_sbox_tb.sv was successful.
+# Compile of hash_main_iteration.sv was successful.
+vsim -gui work.full_hash_aes_sbox_tb
+# vsim -gui work.full_hash_aes_sbox_tb 
+# Start time: 12:21:48 on Jul 11,2021
+# Loading sv_std.std
+# Loading work.full_hash_aes_sbox_tb
+# Loading work.full_hash_aes_top
+# Loading work.hash_main_iteration
+# Loading work.hash_main_round
+# Loading work.aes_sbox
+# Loading work.hash_final_round
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 44
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 88
+run -all
+# Message length:          20
+# Message to hash:         This is another test
+# Computed digest:         cc1b6bd2d286a4c2
+# Success!
+# 
+# ** Note: $stop    : C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv(97)
+#    Time: 245 ns  Iteration: 1  Instance: /full_hash_aes_sbox_tb
+# Break in Module full_hash_aes_sbox_tb at C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv line 97
+quit -sim
+# End time: 12:40:03 on Jul 11,2021, Elapsed time: 0:18:15
+# Errors: 0, Warnings: 5
+# Compile of hash_main_iteration.sv was successful.
+vsim -gui work.full_hash_aes_sbox_tb
+# vsim -gui work.full_hash_aes_sbox_tb 
+# Start time: 12:40:13 on Jul 11,2021
+# Loading sv_std.std
+# Loading work.full_hash_aes_sbox_tb
+# Loading work.full_hash_aes_top
+# Loading work.hash_main_iteration
+# Loading work.hash_main_round
+# Loading work.aes_sbox
+# Loading work.hash_final_round
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 44
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 88
+run -all
+# Message length:          20
+# Message to hash:         This is another test
+# Computed digest:         f28b504c3e194877
+# Target and computed hashes do not match.
+# 
+# ** Note: $stop    : C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv(97)
+#    Time: 245 ns  Iteration: 1  Instance: /full_hash_aes_sbox_tb
+# Break in Module full_hash_aes_sbox_tb at C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv line 97
+quit -sim
+vsim -gui work.full_hash_aes_sbox_tb
+# End time: 12:41:35 on Jul 11,2021, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 4
+# vsim -gui work.full_hash_aes_sbox_tb 
+# Start time: 12:41:35 on Jul 11,2021
+# Loading sv_std.std
+# Loading work.full_hash_aes_sbox_tb
+# Loading work.full_hash_aes_top
+# Loading work.hash_main_iteration
+# Loading work.hash_main_round
+# Loading work.aes_sbox
+# Loading work.hash_final_round
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 44
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 88
+run -all
+# Message length:          20
+# Message to hash:         This is another test
+# Computed digest:         f28b504c3e194877
+# Success!
+# 
+# ** Note: $stop    : C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv(97)
+#    Time: 245 ns  Iteration: 1  Instance: /full_hash_aes_sbox_tb
+# Break in Module full_hash_aes_sbox_tb at C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv line 97

@@ -115,7 +115,7 @@ def aes_full_hash_sbox(M, H_init):
     H = H_init
     for m in M:
         m = ord(m)
-        for r in range(1):
+        for r in range(64):
             H = hash_main_round(m, H)
     return hash_final_round(C, H)
 

@@ -36,7 +36,7 @@ Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 tCvgOpt 0
 vfull_hash_aes_sbox_tb
 R0
-!s110 1625998442
+!s110 1625998683
 !i10b 1
 !s100 :6?BRfXA@JK4UJ]eWmni21
 R2
@@ -44,16 +44,16 @@ Iz5zS:7?M88_TRg474LPof1
 R3
 S1
 R4
-w1625998396
+w1625998673
 8C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv
 FC:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv
-!i122 59
+!i122 60
 Z9 L0 2 100
 R5
 r1
 !s85 0
 31
-!s108 1625998442.000000
+!s108 1625998683.000000
 !s107 C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv|
 !i113 1
@@ -111,24 +111,24 @@ R7
 R8
 vhash_main_iteration
 R0
-R1
+!s110 1626000006
 !i10b 1
-!s100 2NXIjKalD6<l450i4=JE60
+!s100 7ooV=D^L_AYSl5Y@_QHM22
 R2
-ImJ37[RCi6dCU_CoziRBIB1
+I]nR3:nBLj_lH@e>EG^z^I1
 R3
 S1
 R4
-w1625935112
+w1625999986
 8C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/db/hash_main_iteration.sv
 FC:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/db/hash_main_iteration.sv
-!i122 55
-L0 1 13
+!i122 62
+L0 2 455
 R5
 r1
 !s85 0
 31
-R6
+!s108 1626000006.000000
 !s107 C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/db/hash_main_iteration.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/db/hash_main_iteration.sv|
 !i113 1
