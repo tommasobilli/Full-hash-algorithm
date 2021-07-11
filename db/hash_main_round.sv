@@ -6,7 +6,7 @@ module hash_main_round (
 
   reg [7:0][7:0] s_value;
   reg [7:0][7:0] idx;
-  reg [3:0]      tmp;
+  reg [7:0]      tmp;
 
   aes_sbox sbox1 (
      .in (idx[0])
@@ -50,35 +50,35 @@ module hash_main_round (
 
   always @(*) begin
     // H[0]
-    tmp = (h[1] ^ M)
+    tmp = (h[1] ^ M);
     idx[0] = tmp;
     h_out[0] = s_value[0];
     // H[1]
-    tmp = (h[2] ^ M)
+    tmp = (h[2] ^ M);
     idx[1] = (tmp << 1) | (tmp >> 7);
     h_out[1] = s_value[1];
     // H[2]
-    tmp = (h[3] ^ M)
+    tmp = (h[3] ^ M);
     idx[2] = (tmp << 2) | (tmp >> 6);
     h_out[2] = s_value[2];
     // H[3]
-    tmp = (h[4] ^ M)
+    tmp = (h[4] ^ M);
     idx[3] = (tmp << 3) | (tmp >> 5);
-    h_out[3] = s_value[4];
+    h_out[3] = s_value[3];
     // H[4]
-    tmp = (h[5] ^ M)
+    tmp = (h[5] ^ M);
     idx[4] = (tmp << 4) | (tmp >> 4);
     h_out[4] = s_value[4];
     // H[5]
-    tmp = (h[6] ^ M)
+    tmp = (h[6] ^ M);
     idx[5] = (tmp << 5) | (tmp >> 3);
     h_out[5] = s_value[5];
     // H[6]
-    tmp = (h[7] ^ M)
+    tmp = (h[7] ^ M);
     idx[6] = (tmp << 6) | (tmp >> 2);
     h_out[6] = s_value[6];
     // H[7] 
-    tmp = (h[0] ^ M)
+    tmp = (h[0] ^ M);
     idx[7] = (tmp << 7) | (tmp >> 1);
     h_out[7] = s_value[7];
   end
