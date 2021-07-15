@@ -1,6 +1,6 @@
 vsim -gui work.full_hash_aes_sbox_tb
 # vsim -gui work.full_hash_aes_sbox_tb 
-# Start time: 19:06:02 on Jul 14,2021
+# Start time: 10:35:06 on Jul 15,2021
 # Loading sv_std.std
 # Loading work.full_hash_aes_sbox_tb
 # Loading work.full_hash_aes_top
@@ -12,15 +12,14 @@ vsim -gui work.full_hash_aes_sbox_tb
 #    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 44
 # ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
 #    Time: 0 ns  Iteration: 0  Instance: /full_hash_aes_sbox_tb File: C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv Line: 88
-add wave -position end sim:/full_hash_aes_sbox_tb/full_hash_aes_sbox/*
 run -all
-# Message length:          24
-# Message to hash:         Qualche pezzo di canzone
-# Computed digest:         30f58aa3699c2411
+# Message length:         574
+# Message to hash:         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+# Computed digest:         681259def2179f0a
 # Success!
 # 
 # ** Note: $stop    : C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv(97)
-#    Time: 285 ns  Iteration: 1  Instance: /full_hash_aes_sbox_tb
+#    Time: 5785 ns  Iteration: 1  Instance: /full_hash_aes_sbox_tb
 # Break in Module full_hash_aes_sbox_tb at C:/Users/tomma/Desktop/Uni/Magistrale/Second Year/Hardware and Embedded Security/Project/full_hash_algorithm_aes_sbox/Full-hash-algorithm/tb/full_hash_aes_sbox_tb.sv line 97
-# End time: 19:07:07 on Jul 14,2021, Elapsed time: 0:01:05
+# End time: 10:35:58 on Jul 15,2021, Elapsed time: 0:00:52
 # Errors: 0, Warnings: 3
